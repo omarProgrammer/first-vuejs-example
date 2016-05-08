@@ -11,6 +11,12 @@ module.exports = {
       query: {
         presets: ['es2015']
       }
-    }]
+    }, {
+      test: /\.tpl$/,
+      loader: 'raw'
+    }, {
+      test: /\.scss$/,
+      loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+   }]
   }
 }

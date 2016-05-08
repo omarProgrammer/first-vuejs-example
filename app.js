@@ -56,10 +56,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	console.log('okkk');
+
 	new _vue2.default({
 		el: '#app',
 		components: {
-			youtube: _youtube2.default
+			appYoutube: _youtube2.default
 		}
 	});
 
@@ -10208,17 +10210,124 @@
 
 	var _youtube2 = _interopRequireDefault(_youtube);
 
+	var _searchInput = __webpack_require__(5);
+
+	var _searchInput2 = _interopRequireDefault(_searchInput);
+
+	var _listVideo = __webpack_require__(7);
+
+	var _listVideo2 = _interopRequireDefault(_listVideo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _vue2.default.extend({
-		template: _youtube2.default
+		template: _youtube2.default,
+		components: {
+			searchInput: _searchInput2.default,
+			listVideo: _listVideo2.default
+		}
 	});
 
 /***/ },
 /* 4 */
 /***/ function(module, exports) {
 
-	
+	module.exports = "<di class=\"app-youtube\">\r\n\t<search-input> </search-input>\r\n\t<list-video> </list-video>\r\n</div>"
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _searchInput = __webpack_require__(6);
+
+	var _searchInput2 = _interopRequireDefault(_searchInput);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _vue2.default.extend({
+		template: _searchInput2.default
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	module.exports = "<form>\r\n\t<label>\r\n\t  Search: \r\n\t  <input name=\"search\" id=\"search\" value=\"\" placeholder=\"put your search keyword\" />\r\n\t</label>\t\r\n</form>"
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _video = __webpack_require__(8);
+
+	var _video2 = _interopRequireDefault(_video);
+
+	var _listVideo = __webpack_require__(10);
+
+	var _listVideo2 = _interopRequireDefault(_listVideo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _vue2.default.extend({
+		template: _listVideo2.default,
+		components: {}
+	});
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _video = __webpack_require__(9);
+
+	var _video2 = _interopRequireDefault(_video);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _vue2.default.extend({
+		template: _video2.default
+	});
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports = ""
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\r\n\r\n\t<div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div><div> 1 </div>\r\n</div>"
 
 /***/ }
 /******/ ]);

@@ -1,9 +1,14 @@
 import Vue from 'vue';
 import template from './youtube.tpl'
+import searchInput from './../searchInput/searchInput';
+import listVideo from './../listVideo/listVideo'
 
 
-console.log(Vue);
 
 export default Vue.extend({
-	template
+	template,
+	components: {
+		searchInput,
+		listVideo
+	}
 })
