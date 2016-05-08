@@ -4,7 +4,6 @@ import searchInput from './../searchInput/searchInput';
 import listVideo from './../listVideo/listVideo'
 
 
-
 export default Vue.extend({
 	template,
 	components: {

@@ -1,6 +1,6 @@
 import Video from './video';
-import Ajax from './ajax';
-import CONSTANT from './../constant';
+import Ajax from './feed';
+
 
 export default Tag {
 	name;
